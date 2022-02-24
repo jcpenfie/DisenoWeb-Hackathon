@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <title>Hackaton</title>
+</head>
+
+<body>
+    <nav class="w3-sidenav" style="display:none">
+        <ul>
+            <li class="nav-link getHover">
+                <a href="#info">Información</a>
+                <a href="#">Novedades</a>
+                <a href="#lugar">Lugar</a>
+                <a href="https://forms.gle/d5AsqTHz8CoXU9y9A">Apúntate</a>
+                <!-- <a href="#">FAQs</a> -->
+            </li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <header class="w3-container w3-teal">
+            <span class="opennav" onclick="w3_open()" id="openClose">&#9776;</span>
+        </header>
+        <nav class="hide desktop">
+            <a href="index.html" class="logoInnicia getHover"><img src="./img/Logo innicia.png" alt="Logo innicia" class="logoInnicia getHover"></a>
+            <ul>
+                <li class="nav-link getHover">
+                    <a href="#info">Información</i></a>
+                </li>
+                <li class="nav-link getHover">
+                    <a href="https://www.iesponcedeleon.es/search/label/Innicia">Novedades</a>
+                </li>
+                <li class="nav-link getHover">
+                    <a href="#lugar">Lugar</a>
+                </li>
+                <li class="nav-link getHover">
+                    <a href="https://forms.gle/d5AsqTHz8CoXU9y9A">Apúntate</a>
+                </li>
+                <!-- <li class="nav-link getHover">
+                    <a href="#">FAQs</a>
+                </li> -->
+            </ul>
+        </nav>
+
+        <div class="image-wrap getHover"></div><br>
+
+        <h1 class="big-name getHover"><br><span>¡</span>Apúntate<span> a este </span> evento único <span> para mejorar
+                hoy el </span>futuro<span>!</span></span><br></h1>
+
+        <!-- boton inscribirse -->
+        <a href="https://forms.gle/d5AsqTHz8CoXU9y9A" class="btnSub">
+            <svg class="hide" id="demo" xmlns="http://www.w3.org/2000/svg" width="230" height="60" viewBox="0 0 220 60">
+                <rect x="0" y="0" width="60" height="60" rx="30" ry="30" fill="#7A0BC0" />
+                <rect x="0" y="0" width="230" height="60" rx="30" ry="30" fill="none" stroke="#7A0BC0"
+                    stroke-width="2" />
+                <text transform="translate(140 38)" text-anchor="middle" font-size="20" fill="#7A0BC0">Apúntate
+                    aquí</text>
+                <line x1="38" y1="30" x2="38" y2="30" stroke-width="4" stroke="#fff" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <polyline id="start" points="27 20 38 30 27 40" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" stroke="white" stroke-width="4"></polyline>
+            </svg>
+        </a>
+
+        <!-- seccion de abajo header -->
+        <div class="bottom-section hide">
+            <p>
+                <i class='bx bx-map'></i> María Auxiliadora, 10 (Casa Surga, Utrera)
+            </p>
+            <p>
+                <i class='bx bxs-calendar '></i>16 de febrero de 2022. De 9 a 20h
+            </p>
+        </div>
+    </div>
+
+    <section>
+        <div class="container reveal">
+            <p>
+                ¿Y cuál es el reto?<br><br>
+                <span>El reto se </span>desvela <span> a todos los participantes el mismo </span>día del evento
+                <span></span></span>
+            </p>
+        </div>
+    </section>
+
+    <div class="div-carousel">
+        <!-- titulo Información -->
+        <h1 class="medium-name getHover">Este evento forma parte del programa de cultura emprendedora</h1>
+        <!-- carrousel -->
+
+        <div class="carrousel" id="info">
+            <div class="carousel" data-gap="0">
+                <figure>
+                    <img src="./img/carrousel4.webp" alt="Acepta el reto">
+                    <img src="./img/carrousel5.webp" alt="Aprende algo nuevo">
+                    <img src="./img/carrousel6.webp" alt="Comparte tu talento">
+                    <img src="./img/carrousel2.webp" alt="No olvides">
+                    <img src="./img/carrousel3.webp" alt="Ve a por el premio">
+                    <img src="./img/carrousel1.webp" alt="Vale por 5€">
+                    <img src="./img/carrousel7.webp" alt="dia y hora">
+                </figure>
+                <nav>
+                    <button class="nav prev">Anterior</button>
+                    <button class="nav next">Siguiente</button>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- svgs -->
+
+    <!-- <div class="custom-shape-divider-top-1643828872">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                opacity=".25" class="shape-fill"></path>
+            <path
+                d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                opacity=".5" class="shape-fill"></path>
+            <path
+                d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                class="shape-fill"></path>
+        </svg>
+    </div> -->
+
+    <!-- mapa -->
+    <section id="lugar">
+        <div class="map reveal">
+            <p>
+                ¿Dónde?<br><br>
+                <span>María Auxiliadora, 10 (Casa Surga, </span> Utrera<span>)</span>
+            </p>
+        </div>
+    </section>
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3178.709360705955!2d-5.780468897819998!3d37.18337745353809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd127f0ea76c762d%3A0xe0632dd3bf0d97c4!2sAv.%20Mar%C3%ADa%20Auxiliadora%2C%2010%2C%2041710%20Utrera%2C%20Sevilla!5e0!3m2!1ses!2ses!4v1643833350521!5m2!1ses!2ses"
+            allowfullscreen="" loading="lazy" class="iframe_map"></iframe>
+    </div>
+
+    <!-- faldon -->
+
+    <div class="contenido">
+        <div class="contenido_organizan">
+            <div class="div_img_organizan">
+                <img class="img_organizan" src="img/ORGANIZAN.png" alt="">
+            </div>
+            <div class="contenido_organizan_logos">
+                <figure class="gallery_picture">
+                    <img class="img1 imgFald" src="img/ORGANIZAN AYTO 1.png" alt="">
+                </figure>
+                <figure class="gallery_picture">
+                    <img class="img2 imgFald" src="img/ORGANIZAN JUNTA 2.png" alt="">
+                </figure>
+                <figure class="gallery_picture">
+                    <img class="img3 imgFald" src="img/ORGANIZAN IES 3.png" alt="">
+                </figure>
+            </div>
+
+            <div class="div_img_gestionan">
+                <img class="img_gestionan" src="img/GESTIONAN.png" alt="">
+            </div>
+            <div class="contenido_gestionan_logos">
+                <figure class="gallery_picture">
+                    <img class="img1 imgFald" src="img/GESTIONAN CADE 1.png" alt="">
+                </figure>
+                <figure class="gallery_picture">
+                    <img class="img2 imgFald" src="img/GESTIONAN FP 2.png" alt="">
+                </figure>
+            </div>
+
+            <div class="div_img_gestionan">
+                <img class="img_gestionan" src="img/COLABORAN.png" alt="">
+            </div>
+            <div class="contenido_gestionan_logos">
+                <figure class="gallery_picture">
+                    <img class="img1 imgFald mocaibo" src="img/COLABORAN MOCAIBO.png" alt="">
+                </figure>
+                <figure class="gallery_picture">
+                    <img class="img2 imgFald" src="img/COLABORAN DIEGO.png" alt="">
+                </figure>
+            </div>
+
+        </div>
+    </div>
+    <!--Boton subir-->
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
+    <!-- footer -->
+    <footer>
+        <div class="footer_contenido">
+
+            <div class="footer_opciones">
+                <div class="footer_logo">
+                    <img src="img/Logo innicia.png" alt="Logo inicia" class="logo_footer">
+                </div>
+                <div class="footer_menu">
+                    <a href="#info">Información</a>
+                    <a href="#">Novedades</a>
+                    <a href="#lugar">Lugar</a>
+                    <a href="https://forms.gle/d5AsqTHz8CoXU9y9A">Apúntate</a>
+                    <div>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                    </div>
+                    <!-- <a href="">FAQs</a> -->
+                </div>
+                <hr class="linea vertical">
+                <div class="footer_inscripcion">
+                    <p>INSCRIPCIONES:</p>
+                    <img src="img/CODIGO QR FINAL.png" alt="qr">
+                </div>
+            </div>
+
+            <hr class="linea horizontal">
+            <div class="footer_contenido_realizado">
+                <p>Web realizada por alumnado del CFGS "DAW" del IES Ruiz Gijón.</p>
+                <p>Juan Carlos Peña Fierro</p>
+                <p>Álvaro López Álvarez</p>
+                <p>Amanda Rodríguez Ramos</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
